@@ -179,6 +179,13 @@ ul, ol { margin: 0 0 1em; padding-left: 1.3em; }
 .breadcrumb a:hover { color: var(--gold); }
 
 /* Cards / Grids */
+/* Grid/flex items default to min-width:auto, which lets a child's content
+   (an aspect-ratio box, a long word, a wide image) demand more space than
+   its track was given, blowing the layout out past the container. Force
+   every grid/flex item back to respecting its track/flex-basis instead. */
+.grid, .split, .plane-card, .footer-grid, .form-grid, .stat-strip, .btn-row { min-width: 0; }
+.grid > *, .split > *, .plane-card > *, .footer-grid > *, .form-grid > *, .stat-strip > *, .btn-row > * { min-width: 0; }
+
 .grid { display: grid; gap: 24px; }
 .grid-2 { grid-template-columns: repeat(2, 1fr); }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
