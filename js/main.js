@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document.querySelectorAll('.main-nav .dropdown > a').forEach(function (link) {
     link.addEventListener('click', function (e) {
-      if (window.innerWidth <= 1180) {
+      if (window.innerWidth <= 1360) {
         e.preventDefault();
         link.parentElement.classList.toggle('open');
       }
