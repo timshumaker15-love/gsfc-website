@@ -156,6 +156,12 @@ ul, ol { margin: 0 0 1em; padding-left: 1.3em; }
 .hero .container { padding-top: 76px; padding-bottom: 76px; position: relative; z-index: 2; }
 .hero h1 { color: var(--white); font-size: 2.6rem; margin-bottom: 0.35em; }
 .hero .lede { color: #cfdae4; font-size: 1.2rem; }
+.hero .btn-outline {
+  color: var(--white);
+  border-color: rgba(255,255,255,0.75);
+  background: rgba(255,255,255,0.1);
+}
+.hero .btn-outline:hover { background: rgba(255,255,255,0.22); color: var(--white); }
 .hero-badge {
   display: inline-flex; align-items: center; gap: 8px;
   background: rgba(217,164,65,0.14); border: 1px solid rgba(217,164,65,0.4);
