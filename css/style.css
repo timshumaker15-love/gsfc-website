@@ -120,15 +120,23 @@ ul, ol { margin: 0 0 1em; padding-left: 1.3em; }
 .main-nav .dropdown-menu {
   display: none;
   position: absolute; top: 100%; left: 0;
+  /* No margin gap between the trigger link and the menu: a margin here is
+     dead space the cursor crosses while over neither element, which drops
+     :hover and closes the menu before you can reach it. The background/
+     border/shadow start immediately at the link's edge; padding-top fakes
+     the old visual spacing from inside the hoverable box instead. */
+  margin: 0;
   background: var(--white);
+  background-clip: padding-box;
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: var(--shadow-lg);
   min-width: 240px;
   max-width: 300px;
   padding: 8px;
+  padding-top: 14px;
+  margin-top: -6px;
   list-style: none;
-  margin: 6px 0 0;
   z-index: 50;
   white-space: normal;
 }
