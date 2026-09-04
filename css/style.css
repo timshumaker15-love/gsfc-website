@@ -238,6 +238,8 @@ ul, ol { margin: 0 0 1em; padding-left: 1.3em; }
   border-right: 1px solid var(--line);
 }
 .stat-strip .stat:last-child { border-right: none; }
+.stat-strip a.stat { transition: background 0.15s ease; }
+.stat-strip a.stat:hover { background: var(--sky-light); }
 .stat .num { font-family: var(--serif); font-size: 1.8rem; color: var(--navy); font-weight: 700; }
 .stat .lbl { font-size: 0.82rem; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.03em; }
 
