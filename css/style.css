@@ -323,6 +323,15 @@ textarea { min-height: 110px; resize: vertical; }
 
 .photo-frame { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); }
 
+/* Ground school quarterly session cards */
+.session-card.is-placeholder { opacity: 0.62; }
+.session-card.is-placeholder h3 { color: var(--ink-soft); }
+.session-download {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 0.85rem; font-weight: 700; color: var(--sky);
+}
+.session-download svg { flex-shrink: 0; }
+
 /* Fleet / aircraft spec cards */
 .plane-card { display: grid; grid-template-columns: 1fr 1.3fr; gap: 0; overflow: hidden; }
 .plane-photo { aspect-ratio: 4/3; object-fit: cover; width: 100%; height: 100%; }
